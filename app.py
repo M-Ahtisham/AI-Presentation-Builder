@@ -104,7 +104,7 @@ def generate_presentation_content(topic: str, num_slides: int, style: str) -> di
     """
     
     try:
-        model = genai.GenerativeModel("gemini-pro")
+        model = genai.GenerativeModel("gemini-3-flash-preview")
         response = model.generate_content(prompt)
         
         # Extract JSON from response
